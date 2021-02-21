@@ -1,0 +1,166 @@
+/* My BIG IT162 Portal Website Styles */
+/* GLOBAL RULES */
+html {
+    background-color:#659dbd;
+}
+
+main.wrapper {
+    margin:auto;
+    background-color:#daad86;
+    overflow:auto;
+}
+
+
+h2, h3, p {
+    font-family: Helvetica, sans-serif;
+    margin:1em 1em;
+}
+
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+}
+
+.logo {
+    color:dodgerblue;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+/* END GLOBAL RULES */
+
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+    
+   main.wrapper {
+        width:80%;
+        margin:auto;
+    }
+
+    section {
+        width:75%;
+        float:left;
+    }
+    
+     aside {    
+        width:24%;
+        float:right;
+    }
+            
+    img.desktop {
+              float:left;
+              width:50%;
+              display:inline-block;
+              margin-right: 1em;
+    }
+    
+    img.tablet, img.phone {
+           display:none;
+        }  
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+                background-color: #333;
+                color:#fff;
+        }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+    
+    section {
+        width:75%;
+        float:left;
+    }
+    
+    aside {    
+        width:24%;
+        float:right;
+    }
+    
+    img.tablet {
+            width:100%;
+            display:inline-block;
+    }
+    
+    img.desktop, img.phone {
+           display:none;
+        }  
+    
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #333;
+        color:#fff;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    img.phone {
+            width:100%;
+            display:inline-block;
+    }
+    
+    img.tablet, img.desktop {
+           display:none;
+        }  
+
+}
+    
+/* START -GLOBAL EMBED RESPONSIVELY STYLES */
+    
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9*/
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.webcam-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9*/
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+div.webcam-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.embed-container.agenda-view {
+    display:block;
+    
+}
+div.embed-container.month-view {
+    display:block;
+}
+/* END - EMBED RESPONSIVELY STYLES */
+    
+/* HIDE AGENDA VIEW CALENDAR */
+footer {
+    padding:1em;
+    clear: both;
+    text-align: center;
+}
+
