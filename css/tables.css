@@ -20,6 +20,10 @@ td,th {
     font-family: Helvetica, sans-serif;
 }
 
+th {
+    background-color:#EF3E42;
+}
+
 table.client {
     margin: 40px auto; /* T R B L */
 }
