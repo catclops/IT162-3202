@@ -1,4 +1,4 @@
-/* My WEB120 Portal Website Styles */
+/* My IT162 Portal Website Styles */
 
 html {
     background-color:#659dbd;
@@ -7,6 +7,8 @@ html {
 main.wrapper {
     background-color:#daad86;
     overflow:auto;
+    width: 1170px;
+    max-width: 100%;
 }
 
 h1>a {
@@ -28,7 +30,7 @@ div.embed-container {
     height: 0;
     overflow: hidden;
     margin: auto;
-    max-width: 98%;
+    max-width: 100%;
 } 
 
 div.embed-container iframe {
@@ -65,7 +67,7 @@ footer {
             
     img.desktop {
               float:left;
-              width:50%;
+              width:100%;
               display:inline-block;
               margin-right: 1em;
     }
